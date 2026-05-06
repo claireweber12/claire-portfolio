@@ -7,7 +7,7 @@ function Hero(){
             <h1>Hi, I'm Claire Weber</h1>
 
             <p className="hero-description">
-                I recently graduated from Auburn University with a Bachelors of Software Engineering
+                I recently graduated from Auburn University with a Bachelors of Software Engineering and a minor in Business, Engineering, and Technology.
                 I build projects that combine full stack development, AI, and real-world problem solving.
             </p>
 
