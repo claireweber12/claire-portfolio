@@ -2,7 +2,7 @@
 function Hero(){
     return(
         <section className="hero">
-            <p className="eyebrow">Software Engineering · AI ·Full-Stack Development</p>
+            <p className="eyebrow">Software Engineering · AI · Full-Stack Development</p>
 
             <h1>Hi, I'm Claire Weber</h1>
 

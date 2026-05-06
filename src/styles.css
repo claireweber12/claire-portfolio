@@ -64,6 +64,51 @@ body{
     color:#222;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
+.site-header {
+    background:#f7f7f3;
+    border-bottom: 1px solid #f7f7f3;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.navbar{
+    max-width:1100px;
+    margin:0 auto;
+    padding: 1rem 1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#222;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:1.5rem;
+    
+}
+
+.nav-links a{
+    color:#222;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:#7a4e2d;
+}
+
 @media (max-width: 700px){
     .hero h1 {
         font-size: 2.8rem;
@@ -71,5 +116,15 @@ body{
 
     .hero-description{
         font-size:1.05rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    .nav-links {
+        flex-wrap:wrap;
+        justify-content: center;
     }
 }
