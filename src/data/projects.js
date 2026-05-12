@@ -1,3 +1,6 @@
+import threadedPhoto from '../assets/threaded-picture.png';
+import routecastPhoto from '../assets/routecast-picture.png';
+
 export const projects = [
 
 {   
@@ -11,7 +14,7 @@ export const projects = [
     demo: "https://main.d3bty356y6d0wb.amplifyapp.com/",
     caseStudy:'#',
     featured: true,
-    img: '../assets/threaded-photo.png',
+    img: threadedPhoto,
 },
 {   
     id:2,
@@ -23,7 +26,7 @@ export const projects = [
     github:"https://github.com/claireweber12/routecase",
     demo: "#",
     featured:false,
-    img:'',
+    img: routecastPhoto,
 },
 {
     title: "AquaGuard",
