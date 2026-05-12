@@ -13,12 +13,22 @@
   color: var(--muted-text);
 }
 
-.research-card .project-skills span {
-  background: var(--accent-light);
-  border-color: var(--accent);
-  color: --text;
+.project-skills{
+  display:flex;
+  flex:wrap;
+  justify-content: space-around;
+  margin-bottom:1rem;
+  margin-top:1rem;
+}
+
+span{
+  border:2px solid var(--accent);
+  background-color:var(--accent-light);
+  border-radius:15px;
+  padding:.5rem;
 }
 
 .research-card .project-link {
-  color: var(--accent);
+  color: var(--pink-dark);
+  font-weight:700;
 }

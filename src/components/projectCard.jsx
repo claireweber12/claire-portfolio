@@ -1,3 +1,4 @@
+import threadedPhoto from '../assets/threaded-picture.png';
 
 function ProjectCard({project, isReversed}) {
     return (
@@ -43,7 +44,12 @@ function ProjectCard({project, isReversed}) {
                         <span></span>
                     </div>
                     <div className="preview-body">
-                        <div className="preview-image-placeholder"></div>
+                        {project.img === '' && (
+                            <div className="preview-image-placeholder"></div>
+                        )}
+                        {project.img !== '' && (
+                            <img src={threadedPhoto} alt="Claire Weber" className="preview-image-threaded" />
+                        )}
                         <div className="preview-line long"></div>
                         <div className="preview-line"></div>
                         <div className='preview-pill-row'>

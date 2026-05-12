@@ -1,15 +1,31 @@
 :root {
-  --background: #fbfceb;
-  --background-soft: #fcf0fb;
+  --background: #fffefd;
+  --background-soft: #f1e7dc;
   --text: #2D2A26;
-  --muted-text: #7A736B;
-  --accent: #a34a5d;
-  --accent-light: #ecd6da;
+  --muted-text: #7c6f66;
+  --accent: #9fac92;
+  --accent-light: #dfe7d8;
+  --pink: #9a5f63;
+  --pink-dark: #744347;
+  --pink-light: #ead0d1;
   --card: #FFFFFF;
-  --border: #DED6CC;
-  --shadow: 0 12px 35px rgba(53, 50, 46, 0.28);
+  --gold: #e1ca9d;
+  --border: #e4d8cb;
+  --shadow-soft: 0 12px 30px rgba(53, 44, 36, 0.201);
+  --shadow-hover: 0 18px 40px rgba(47, 41, 36, 0.13);
+
+  font-family:"Inter", sans-serif;
 }
 
+h1, h2 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
 
 
 * {
@@ -44,8 +60,9 @@ html {
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    background-color: var(--accent-light);
+  transform: translateY(-2px);
+  background-color: var(--accent-light);
+  box-shadow: var(--shadow-hover);
 }
 
 .section-title::after {

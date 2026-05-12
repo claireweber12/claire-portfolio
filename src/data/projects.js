@@ -11,6 +11,7 @@ export const projects = [
     demo: "https://main.d3bty356y6d0wb.amplifyapp.com/",
     caseStudy:'#',
     featured: true,
+    img: '../assets/threaded-photo.png',
 },
 {   
     id:2,
@@ -22,6 +23,7 @@ export const projects = [
     github:"https://github.com/claireweber12/routecase",
     demo: "#",
     featured:false,
+    img:'',
 },
 {
     title: "AquaGuard",
@@ -32,6 +34,7 @@ export const projects = [
     github: "#",
     caseStudy:'#',
     featured:false,
+    img:'',
 },
 
 
