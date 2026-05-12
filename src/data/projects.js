@@ -24,7 +24,7 @@ export const projects = [
     helps travelers check weather conditions along their route",
     tech: ["Javascript", "Node.js", "CSS/HTML", "API Integration"],
     github:"https://github.com/claireweber12/routecase",
-    demo: "#",
+    demo: "https://routecastweather.netlify.app/",
     featured:false,
     img: routecastPhoto,
 },
