@@ -1,0 +1,24 @@
+.research-card {
+  background: var(--card);
+  color: --text;
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.research-card h2 {
+  margin-bottom: 1rem;
+}
+
+.research-card p {
+  color: var(--muted-text);
+}
+
+.research-card .project-skills span {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: --text;
+}
+
+.research-card .project-link {
+  color: var(--accent);
+}
