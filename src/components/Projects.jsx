@@ -1,31 +1,28 @@
-import ProjectCard from "./projectCard";
 import { projects } from "../data/projects";
+import ProjectCard from "./projectCard";
 
-function Projects(){
-    return (
-        <section id="projects" className="section projects">
-            <h2>Featured Projects</h2>
+function Projects() {
+  return (
+    <section className="projects-section" id="projects">
+      <div className="section-header">
+        <h2 className="section-title">Selected Work</h2>
+        <p className="section-intro">
+          A collection of projects where I’ve explored full-stack development,
+          AI, research, and product-focused problem solving.
+        </p>
+      </div>
 
-            <p className="section-intro">
-                A few projects that represent my interests in software 
-                engineering, AI, and building technology with real-world purpose.
-            </p>
-
-            <div className="project-grid">
-                {projects.map((project)=>(
-                    <ProjectCard
-                    key={project.title}
-                    title={project.title}
-                    category={project.category}
-                    description={project.description}
-                    skills={project.skills}
-                    link={project.link}
-                    />
-                ))}
-            </div>
-
-        </section>
-    );
+      <div className="work-list">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            isReversed={index % 2 !== 0}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Projects;

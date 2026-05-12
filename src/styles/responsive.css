@@ -1,26 +1,94 @@
-@media (max-width: 700px){
-    .hero h1 {
-        font-size: 2.8rem;
-    }
+@media (max-width: 850px){
+  .hero{
+      grid-template-columns:1fr;
+      padding:5rem 6%;
+      gap:3rem;
+      text-align:left;
+  }
 
-    .hero-description{
-        font-size:1.05rem;
-    }
+  .hero-card-stack{
+      max-width:520px;
+  }
 
-    .navbar {
-        flex-direction: column;
-        gap:1rem;
-    }
+  .mini-card:nth-child(2),
+  .mini-card:nth-child(3) {
+      margin-left: 0;
+  }
 
-    .nav-links {
-        flex-wrap:wrap;
-        justify-content: center;
-    }
-    .project-grid{
-        grid-template-columns:1fr;
-    }
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+  .work-card {
+    grid-template-columns: 1fr;
+  }
 
+  .work-preview {
+    justify-content: flex-start;
+  }
+
+  .preview-window {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+
+  .about-section {
+    padding: 4rem 6%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .puzzle-card:nth-child(1),
+  .puzzle-card:nth-child(2),
+  .puzzle-card:nth-child(3) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .puzzle-card::before,
+  .puzzle-card::after {
+    display: none;
+  }
+    
+
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 4rem 5%;
+  }
+
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .work-card {
+    padding: 1.4rem;
+    border-radius: 26px;
+  }
+
+  .work-card h3 {
+    font-size: 2rem;
+  }
+
+  .work-links {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  
+  .about-section {
+    padding: 3.5rem 5%;
+  }
 }

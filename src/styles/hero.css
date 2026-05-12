@@ -1,30 +1,43 @@
 .hero{
     min-height: 100vh;
-    max-width:1100px;
-    margin: 0 auto;
-    padding: 7rem 1.5rem 5rem;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: 1.1fr 0.9fr;
     align-items:center;
+    gap:4rem;
+    padding: 6rem 8%;
+    background:
+        radial-gradient(circle at top left, rgba(217, 95, 118, 0.16), transparent 35%),
+        linear-gradient(135deg, var(--background), var(--background-soft));
+}
+
+.hero-content{
+    max-width:720px;
 }
 
 .eyebrow{
     color:var(--accent);
-    font-weight:bold;
+    font-size:0.85rem;
+    text-transform:uppercase;
+    letter-spacing:0.14;
+    color: var(--accent);
+    font-weight:700;
     margin-bottom:1rem;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    line-height:1.1;
-    margin-bottom:1rem;
+    font-size: clamp(2.8rem,6vw,5.8rem);
+    line-height:0.95;
+    margin-bottom:1.5rem;
+    color: var(--text);
+    letter-spacing:-0.06em;
 }
 
 .hero-description{
-    max-width: 650px;
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:var(--muted-text);
+    max-width:620px;
+    margin-bottom:2rem;
 }
 
 .hero-buttons{
@@ -50,4 +63,62 @@
 .secondary-button:hover{
     background:var(--text);
     color:white;
+}
+
+.hero-card-stack{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+}
+
+.mini-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  transform: rotate(-1deg);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mini-card:nth-child(2) {
+  margin-left: 2rem;
+  transform: rotate(1.5deg);
+}
+
+.mini-card:nth-child(3) {
+  margin-left: 0.75rem;
+  transform: rotate(-0.5deg);
+}
+
+.mini-card:hover {
+  transform: translateY(-6px) rotate(0deg);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.11);
+}
+
+.mini-card span {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.mini-card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.mini-card p {
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.mini-card.featured {
+  border: 2px dashed rgba(217, 95, 118, 0.35);
 }
